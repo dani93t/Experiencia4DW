@@ -1,0 +1,71 @@
+
+
+
+
+
+        <form action="./" method="post" name="myForm" onsubmit="return validateForm()">
+            Name:
+            <input class="form-control" name="fname" type="text"></input>
+                <button class="btn btn-primary" type="submit" value="Submit">asas </button> 
+                <button class="btn btn-danger" type="reset" value="reset">eliminar</button>
+
+
+        <div class="row justify-content-md-center">
+            <div class="col-6">
+              <b>Nombre del libro</b>
+                <input class="form-control" name="nombre" type="text" placeholder="nobre del libro">
+                </br>
+                <b>cantidad</b> 
+                <input class="form-control col-4" type="number" name="cantidad">
+                </br>
+                <div class="form-group">
+                  <b>version</b></br>
+                  <input  type="radio" name="version" value="lujo"> Lujo </br>
+                  <input  type="radio" name="version" value="bolsillo"> bolsillo </br>
+                </div>
+                </br>
+                
+                <div class="form-group">
+                  <b>retiro</b> </br>
+                  <input type="radio" name="retiro" id="local" value="local" > retiro a local </br>
+                  <input type="radio" name="retiro" id="despacho" value="despacho"> retiro a domicilio </br>
+                </div> 
+                </br>
+
+                <div class="form-group collapse" id="caso-local">
+                  <b>Nombre</b> <br>
+                  <input class="form-control" type="text" name="nombreCliente" placeholder="tu nombre">
+                  <br>
+                  <b>Apellido</b> <br>
+                  <input class="form-control" type="text" name="apellidoCliente" placeholder="tu apellido">
+                  <br>
+                  <b>Telefono</b> <br>
+                  <input class="form-control" type="number" name="telefonoCliente" placeholder="tu numero de telefono o movil">
+                  <br>
+                </div>
+
+
+                <div class="form-group collapse" id="caso-despacho">
+                <b>Informacion de despacho</b><br>
+                  <textarea class="form-control" rows="5" placeholder="escribe tu informacion de despacho"> </textarea> 
+                </div>
+
+
+            </div>
+        </div>
+                
+            
+        </form>
+
+
+
+
+                <script>
+            function validateForm() {
+    		var x = document.forms["myForm"]["fname"].value;
+    			if (x == "") {
+        		alert("Name must be filled out");
+        		return false;
+    }
+}
+        </script>
