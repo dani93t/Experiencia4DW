@@ -34,7 +34,13 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  '/listado': 'LibrosController.mostrar',
+  
+   '/agregar':{
+    view: 'crear'
+  }, 
 
   /***************************************************************************
   *                                                                          *
