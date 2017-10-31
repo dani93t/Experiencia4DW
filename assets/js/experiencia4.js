@@ -1,0 +1,10 @@
+        	$(document).ready(function(){
+    $("#local").click(function(){
+        $("#caso-local").collapse('show');
+        $("#caso-despacho").collapse('hide');
+    });
+    $("#despacho").click(function(){       
+        $("#caso-despacho").collapse('show');
+        $("#caso-local").collapse('hide');
+    });
+});
