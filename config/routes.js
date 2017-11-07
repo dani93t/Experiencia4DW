@@ -32,14 +32,17 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  '/': 'LibroController.home' ,
 
-  '/listado': 'LibrosController.mostrar',
-  
-   '/agregar':{
-    view: 'crear'
+  '/listado': 'LibroController.mostrar',
+
+  'post /registrar':'LibroController.registrar',
+
+
+ 'get /venta/:id':'libroController.editar',
+
+   '/venta':{
+    view: 'venta'
   }, 
 
   /***************************************************************************
